@@ -24,10 +24,22 @@ namespace Is_a___Has_a
 
         private void cmb_tipocurso_SelectedIndexChanged(object sender, EventArgs e)
         {
-            cmb_tipocurso.Items.Add("Presencial");
-            cmb_tipocurso.Items.Add("Virtual");
+            if (cmb_tipocurso.SelectedItem == null)
+                return;
 
-            cmb_tipocurso.SelectedIndex = 0;
+            if (cmb_tipocurso.SelectedItem.ToString() == "Presencial")
+            {
+                label8.Text = "Salón:";
+                label9.Text = "Edificio:";
+            }
+            else if (cmb_tipocurso.SelectedItem.ToString() == "Virtual")
+            {
+                label8.Text = "Plataforma:";
+                label9.Text = "URL:";
+            }
+
+            txt_salon.Clear();
+            txt_edificio.Clear();
         }
 
         private void btn_registrar_Click(object sender, EventArgs e)

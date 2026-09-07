@@ -196,7 +196,7 @@
             // 
             // txt_salon
             // 
-            this.txt_salon.Location = new System.Drawing.Point(98, 258);
+            this.txt_salon.Location = new System.Drawing.Point(127, 258);
             this.txt_salon.Name = "txt_salon";
             this.txt_salon.Size = new System.Drawing.Size(121, 22);
             this.txt_salon.TabIndex = 17;
